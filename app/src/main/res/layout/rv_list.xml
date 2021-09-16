@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="@color/colorAccent"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/rv_layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/img_list"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_title_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="@dimen/_20sdp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/img_list"
+            android:paddingLeft="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/tv_desc_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desc"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/_10sdp"
+            android:fontFamily="sans-serif-light"
+            android:layout_toRightOf="@id/img_list"
+            android:layout_below="@id/tv_title_list"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
